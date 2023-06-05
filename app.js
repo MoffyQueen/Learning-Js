@@ -298,21 +298,172 @@ switch (day) {
         console.log("TUESDAY");
         break;
     case 3:
-        console.log("DAY");
+        console.log("WEDNESDAY");
         break;
     case 4:
-        console.log("DAY");
+        console.log("THURSDAY");
         break;
     case 5:
-        console.log("DAY");
+        console.log("FRIDAY");
         break;
     case 6:
-        console.log("DAY");
+        console.log("SATURDAY");
         break;
     case 1:
-        console.log("DAY");
+        console.log("SUNDAY");
         break;
     
     default:
         break;
 }
+
+
+// ternary operator
+// if(condition){code 1}else{code 2}
+
+//  condition ? action 1 : action 2
+
+15 > 7 ? console.log("Yes") : console.log("NO");
+
+const num2 = 46;
+
+num2 % 2 === 0
+    ? console.log("This is An EVEN number")
+    : console.log("This is an ODD number");
+
+
+// LOOPS - repitive tasks - for, while, do.. while loop
+
+// for (initializer let i = 0; condition i > 5; increment i++){code}
+
+// for (let i = 0; i < 5; i++) {
+//     console.log('In the loop ${i}');
+// }
+// console.log("outside of the loop");
+
+// // sum of
+// let sum = 0
+// for (i = 0; i <= 5; i++){
+//     sum += i
+// }
+// console.log(sum);
+// // initializer
+// // while(condition){code increment}
+
+// let x = 0;
+// while (x < 20) {
+//     console.log("HELLO");
+//     x++;
+// }
+
+// let y = 0;
+// do {
+//     console.log("HEY");
+//     y++
+// } while (y < 5);
+
+// functions
+const var1 = "John";
+
+// Function declaration
+function myFunction() {
+    console.log("HELLO CLASS");
+    console.log("YOU ARE WELCOME");
+}
+myFunction();
+
+function greet(name = "User", age = 18) {
+    console.log("WELCOME" + name + age);
+}
+greet("John" , 76);
+greet("Sandra" , 5);
+greet("EMMANUEL" , 78)
+greet();
+greet("ola");
+
+// calculate the age of users
+// 2023 - year
+
+function calcAge(year) {
+    const age = 2023 - year;
+    console.log(`Your age is ${age}`);
+}
+calcAge(1960);
+calcAge(2000);
+
+function sumNums(a,b) {
+    console.log(`the sum of ${a} and ${b} is ${a + b}`);
+}
+sumNums(4.5, 78);
+
+function describeCountry(country, population, capitalCity) {
+    console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`);
+}
+describeCountry("Finland", 6, "helsink")
+describeCountry("Finland", 6, "helsink")
+describeCountry("Finland", 6, "helsink")
+
+// checks if an email is valid or not
+
+checkEmail("testgoogle@.com");
+
+function checkEmail(email) {
+    if (email.includes("@")) {
+        console.log(`${email} is a valid email address`);
+    } else {
+        console.log(`${email} is not a valid email`);
+    }
+}
+checkEmail("abcgoogle.com");
+
+//HOISTING
+// function expression
+const myAge = 90;
+console.log(myAge);
+
+// myFunction2(4,5);
+const myFunction2 = function (a, b) {
+    console.log("anything");
+    console.log(a + b);
+}
+
+myFunction2(7, 8);
+
+//return keyword
+
+const precious = function (a, b) {
+    return a * b;
+}
+precious(9, 6);
+
+const test = precious(10, 10);
+console.log(test);
+
+// create a function that calc average of two teams
+// d - 103, 98, 89
+// k - 110, 87, 95
+
+const calcAverage = function (a, b, c) {
+    const avg = (a + b + c) / 3;
+    return Number(avg.toFixed(2));
+}
+
+const avgDolphin2 = calcAverage(123, 98, 89);
+const avgKaola = calcAverage(110, 87, 95);
+console.log(avgDolphin2, avgKaola);
+
+function checkWinner(teamA, teamB) {
+    if (teamA > teamB) {
+        console.log("First Team won");
+    } else if (teamB > teamA) {
+        console.log("Second Team won");
+    } else {
+        console.log("No winner");
+    }
+}
+
+checkWinner(avgDolphin2, avgKaola)
+// arrays
+// object
+// asybchronous js
+// DOM
