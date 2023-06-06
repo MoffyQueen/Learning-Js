@@ -234,17 +234,17 @@
 // } else {
 // console.log("Your password is weak");
 //     }
-    const country = "Hungary";
-    const continent = "Europe";
-    const population = 12;
-    const isIsland = false;
-    const language = "French";
+    // const country = "Hungary";
+    // const continent = "Europe";
+    // const population = 12;
+    // const isIsland = false;
+    // const language = "French";
 
-    if (language === "English" && population < 50 && isIsland) {
-        console.log('You should live in ${country}');
-    } else {
-        console.log('${country} does not meet your criteria');
-    }
+    // if (language === "English" && population < 50 && isIsland) {
+    //     console.log('You should live in ${country}');
+    // } else {
+    //     console.log('${country} does not meet your criteria');
+    // }
 // const age = 18;
 // if (age >= 18) {
 //     console.log("You are an adult");
@@ -253,69 +253,69 @@
 //     }
 // if (condition) else if (another condition) else if (condition){}else{}
 
-const password = "mofe";
-// recommended > 7 an dinclude @, strong > 7 and weak
+// // const password = "mofe";
+// // recommended > 7 an dinclude @, strong > 7 and weak
 
-if (password.length >= 7 && password.includes("@")) {
-    console.log("Your password is recommended");
-} else if (password.length >= 7) {
-    console.log("Your password is strong");
-} else {
-    console.log("Your password is weak")
-}
+// if (password.length >= 7 && password.includes("@")) {
+//     console.log("Your password is recommended");
+// } else if (password.length >= 7) {
+//     console.log("Your password is strong");
+// } else {
+//     console.log("Your password is weak")
+// }
 // whether a number is positive, negative or zero
-const num = "3";
+// const num = "3";
 
-if (num > 0) {
-    console.log('${num} is a positive');
-} else if (num < 0) {
-    console.log('${num} is a negative number');
-} else {
-    console.log("This is Zero");
-}
-// even or odd
+// if (num > 0) {
+//     console.log('${num} is a positive');
+// } else if (num < 0) {
+//     console.log('${num} is a negative number');
+// } else {
+//     console.log("This is Zero");
+// }
+// // even or odd
 
-if (num % 2 === 0) {
-    console.log("This is EVEN");
-} else {
-    console.log("This is ODD");
-}
-const age = 18
-if (age < 18) {
-    console.log("Welcome to the baby section");
-} else if (age <= 50) {
-    console.log("Welcome to the club");
-} else  {
-    console.log("Welcome to VIP SECTION");
-}
+// if (num % 2 === 0) {
+//     console.log("This is EVEN");
+// } else {
+//     console.log("This is ODD");
+// }
+// const age = 18
+// if (age < 18) {
+//     console.log("Welcome to the baby section");
+// } else if (age <= 50) {
+//     console.log("Welcome to the club");
+// } else  {
+//     console.log("Welcome to VIP SECTION");
+// }
 // SWITCH STATeMENT
-const day = 1
-switch (day) {
-    case 1:
-        console.log("MONDAY");
-        break;
-    case 2:
-        console.log("TUESDAY");
-        break;
-    case 3:
-        console.log("WEDNESDAY");
-        break;
-    case 4:
-        console.log("THURSDAY");
-        break;
-    case 5:
-        console.log("FRIDAY");
-        break;
-    case 6:
-        console.log("SATURDAY");
-        break;
-    case 1:
-        console.log("SUNDAY");
-        break;
+// const day = 1
+// switch (day) {
+//     case 1:
+//         console.log("MONDAY");
+//         break;
+//     case 2:
+//         console.log("TUESDAY");
+//         break;
+//     case 3:
+//         console.log("WEDNESDAY");
+//         break;
+//     case 4:
+//         console.log("THURSDAY");
+//         break;
+//     case 5:
+//         console.log("FRIDAY");
+//         break;
+//     case 6:
+//         console.log("SATURDAY");
+//         break;
+//     case 1:
+//         console.log("SUNDAY");
+//         break;
     
-    default:
-        break;
-}
+//     default:
+//         break;
+// }
 
 
 // ternary operator
@@ -323,13 +323,13 @@ switch (day) {
 
 //  condition ? action 1 : action 2
 
-15 > 7 ? console.log("Yes") : console.log("NO");
+// 15 > 7 ? console.log("Yes") : console.log("NO");
 
-const num2 = 46;
+// const num2 = 46;
 
-num2 % 2 === 0
-    ? console.log("This is An EVEN number")
-    : console.log("This is an ODD number");
+// num2 % 2 === 0
+//     ? console.log("This is An EVEN number")
+//     : console.log("This is an ODD number");
 
 
 // LOOPS - repitive tasks - for, while, do.. while loop
@@ -363,107 +363,287 @@ num2 % 2 === 0
 // } while (y < 5);
 
 // functions
-const var1 = "John";
+// const var1 = "John";
 
 // Function declaration
-function myFunction() {
-    console.log("HELLO CLASS");
-    console.log("YOU ARE WELCOME");
-}
-myFunction();
+// function myFunction() {
+//     console.log("HELLO CLASS");
+//     console.log("YOU ARE WELCOME");
+// }
+// myFunction();
 
-function greet(name = "User", age = 18) {
-    console.log("WELCOME" + name + age);
-}
-greet("John" , 76);
-greet("Sandra" , 5);
-greet("EMMANUEL" , 78)
-greet();
-greet("ola");
+// function greet(name = "User", age = 18) {
+//     console.log("WELCOME" + name + age);
+// }
+// greet("John" , 76);
+// greet("Sandra" , 5);
+// greet("EMMANUEL" , 78)
+// greet();
+// greet("ola");
 
-// calculate the age of users
-// 2023 - year
+// // calculate the age of users
+// // 2023 - year
 
-function calcAge(year) {
-    const age = 2023 - year;
-    console.log(`Your age is ${age}`);
-}
-calcAge(1960);
-calcAge(2000);
+// function calcAge(year) {
+//     const age = 2023 - year;
+//     console.log(`Your age is ${age}`);
+// }
+// calcAge(1960);
+// calcAge(2000);
 
-function sumNums(a,b) {
-    console.log(`the sum of ${a} and ${b} is ${a + b}`);
-}
-sumNums(4.5, 78);
+// function sumNums(a,b) {
+//     console.log(`the sum of ${a} and ${b} is ${a + b}`);
+// }
+// sumNums(4.5, 78);
 
-function describeCountry(country, population, capitalCity) {
-    console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`);
-}
-describeCountry("Finland", 6, "helsink")
-describeCountry("Finland", 6, "helsink")
-describeCountry("Finland", 6, "helsink")
+// function describeCountry(country, population, capitalCity) {
+//     console.log(`${country} has ${population} million people and its capital city is ${capitalCity}`);
+// }
+// describeCountry("Finland", 6, "helsink")
+// describeCountry("Finland", 6, "helsink")
+// describeCountry("Finland", 6, "helsink")
 
 // checks if an email is valid or not
 
-checkEmail("testgoogle@.com");
+// checkEmail("testgoogle@.com");
 
-function checkEmail(email) {
-    if (email.includes("@")) {
-        console.log(`${email} is a valid email address`);
-    } else {
-        console.log(`${email} is not a valid email`);
-    }
-}
-checkEmail("abcgoogle.com");
+// function checkEmail(email) {
+//     if (email.includes("@")) {
+//         console.log(`${email} is a valid email address`);
+//     } else {
+//         console.log(`${email} is not a valid email`);
+//     }
+// }
+// checkEmail("abcgoogle.com");
 
 //HOISTING
 // function expression
-const myAge = 90;
-console.log(myAge);
+// const myAge = 90;
+// console.log(myAge);
 
 // myFunction2(4,5);
-const myFunction2 = function (a, b) {
-    console.log("anything");
-    console.log(a + b);
-}
+// const myFunction2 = function (a, b) {
+//     console.log("anything");
+//     console.log(a + b);
+// }
 
-myFunction2(7, 8);
+// myFunction2(7, 8);
 
 //return keyword
 
-const precious = function (a, b) {
-    return a * b;
-}
-precious(9, 6);
+// const precious = function (a, b) {
+//     return a * b;
+// }
+// precious(9, 6);
 
-const test = precious(10, 10);
-console.log(test);
+// const test = precious(10, 10);
+// console.log(test);
 
-// create a function that calc average of two teams
-// d - 103, 98, 89
-// k - 110, 87, 95
+// // create a function that calc average of two teams
+// // d - 103, 98, 89
+// // k - 110, 87, 95
 
-const calcAverage = function (a, b, c) {
+// const calcAverage = function (a, b, c) {
+//     const avg = (a + b + c) / 3;
+//     return Number(avg.toFixed(2));
+// }
+
+// const avgDolphin2 = calcAverage(123, 98, 89);
+// const avgKaola = calcAverage(110, 87, 95);
+// console.log(avgDolphin2, avgKaola);
+
+// function checkWinner(teamA, teamB) {
+//     if (teamA > teamB) {
+//         console.log("First Team won");
+//     } else if (teamB > teamA) {
+//         console.log("Second Team won");
+//     } else {
+//         console.log("No winner");
+//     }
+// }
+
+// checkWinner(avgDolphin2, avgKaola)
+// ARROW FUNCTION
+
+// const name = ()=>{}
+
+const logger = (a, b, c) => {
+    const total = a + b + c;
+    return total;
+};
+
+console.log(logger(4, 5, 7));
+// logger(3, 4, 5)
+
+// const difference = (a, b) +> {
+// return a - b;
+// };
+
+const difference = (a, b) => a - b;
+
+console.log(difference(67, 50));
+
+const calcAverage = (a, b, c) => {
     const avg = (a + b + c) / 3;
     return Number(avg.toFixed(2));
+};
+
+// VARIABLE SCOPING - global local var
+
+const myname = "Moyo";
+console.log(myname);
+if (true) {
+    const surname = "Ayo";
+    const myname = "Wale";
+    console.log(surname);
+    console.log("in a block" + myname);
+}
+const surname = "Ade";
+
+console.log("Outside" + surname);
+
+const a = 5;
+console.log(a);
+
+const local = () => {
+    const a = 7;
+    const b = 8;
+
+    console.log(a);
+};
+local();
+// console.log(b);
+console.log(a);
+
+// arrays
+// ARRAYS {elements, element, el}
+
+const students = ["Mofe", "Funso", "Zainab"];
+console.log(students);
+// arrays properties and methods
+console.log(students.length);
+
+// get element in arr
+console.log(students[0]);
+console.log(students[students.length - 1]);
+
+// converting an array to a string - tstring, join
+console.log(students.toString());
+console.log(students.join(" "));
+
+// adding elements to an array - push , unshift
+students.push("Ola");
+students.push("Nike");
+console.log(students.push("Funsho"));
+console.log(students);
+
+students.unshift("Ebuka");
+students.unshift("Emma");
+
+console.log(students);
+
+// removing elements from an array pop shift
+students.pop();
+students.pop();
+students.pop();
+
+students.shift();
+students.shift();
+console.log(students);
+
+console.log(students.sort());
+console.log(students.reverse());
+console.log(students.includes("Ola"));
+console.log(students.includes("Mofe"));
+
+const anotherStudents = ["Toyin", "Zainab"];
+console.log(students.concat(anotherStudents, ["Ayo", "Ade", "Ade"]));
+
+// includes, sort, pop, push, shift, unshift,
+// slice, splice, concat, join, toString
+
+console.log(students.slice(0, 2));
+
+const countries = ("nigeria", "ghana", "canada", "china")
+// countries = nigeria, ghana, canada, china
+console.log(countries.length);
+
+if (countries.length > 5) {
+    console.log(countries.length > 5);
+} else {
+    console.log(countries.length < 5);
 }
 
-const avgDolphin2 = calcAverage(123, 98, 89);
-const avgKaola = calcAverage(110, 87, 95);
-console.log(avgDolphin2, avgKaola);
+let saving = 20000;
+const transaction = [5000, -10000, -100];
 
-function checkWinner(teamA, teamB) {
-    if (teamA > teamB) {
-        console.log("First Team won");
-    } else if (teamB > teamA) {
-        console.log("Second Team won");
+transaction.push(-2000);
+transaction.push(50000);
+
+transaction.push(-3000);
+transaction.pop();
+console.log(transaction);
+let debit = 0;
+let credit = 0;
+
+for (i = 0; i < transaction.length; i++) {
+    // console.log(transaction[i]);
+// saving = saving + transaction[i]
+    saving += transaction[i];
+    if (transaction[i] < 0) {
+        debit += transaction[i];
+        console.log(`You have been debited ${transaction[i]}`);
     } else {
-        console.log("No winner");
+        credit += transaction[i];
+        console.log(`You have been credited ${transaction[i]}`);
     }
 }
+console.log(`The total debit is ${debit}`);
+console.log(`The total credit is ${credit}`);
 
-checkWinner(avgDolphin2, avgKaola)
-// arrays
+console.log(`Your account balance is ${saving}`);
+// filter, find, map, forEach
+// higher order function, callback func
+const friends = ["John", "Jane", "Adam", "Jennifer", "Owen"];
+friends.includes("Lester");
+
+friends.forEach((friend, index) => {
+    console.log(`${index}The name of my friend is ${friend}`);
+});
+
+friends.forEach((f, index) => {
+    console.log(f, index);
+});
+
+// map
+friends.map((val) => {
+    if (val === "Jane" || val === 'Adam') {
+        console.log(`${val} is my best friend`);
+    } else {
+        console.log(`${val} is just my friend`)
+    }
+});
+
+// filter fine
+
+const filteredFriends = friends.filter((friend) => {
+    return friend.startsWith("J");
+});
+console.log(filteredFriends);
+
+// find
+
+const foundUser = friends.find((friend) => {
+    return friend.startsWith("J");
+})
+console.log(foundUser);
+
+const result = friends.filter((friend) => friend.length > 6);
+const result2 = friends.find((f) => f.startsWith("A"));
+
+console.log(result, result2)
+
+const myJob = "DEVELOPER";
 // object
 // asybchronous js
 // DOM
