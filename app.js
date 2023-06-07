@@ -467,183 +467,380 @@
 
 // const name = ()=>{}
 
-const logger = (a, b, c) => {
-    const total = a + b + c;
-    return total;
-};
-
-console.log(logger(4, 5, 7));
-// logger(3, 4, 5)
-
-// const difference = (a, b) +> {
-// return a - b;
+// const logger = (a, b, c) => {
+//     const total = a + b + c;
+//     return total;
 // };
 
-const difference = (a, b) => a - b;
+// console.log(logger(4, 5, 7));
+// // logger(3, 4, 5)
 
-console.log(difference(67, 50));
+// // const difference = (a, b) +> {
+// // return a - b;
+// // };
 
-const calcAverage = (a, b, c) => {
-    const avg = (a + b + c) / 3;
-    return Number(avg.toFixed(2));
-};
+// const difference = (a, b) => a - b;
 
-// VARIABLE SCOPING - global local var
+// console.log(difference(67, 50));
 
-const myname = "Moyo";
-console.log(myname);
-if (true) {
-    const surname = "Ayo";
-    const myname = "Wale";
-    console.log(surname);
-    console.log("in a block" + myname);
-}
-const surname = "Ade";
+// const calcAverage = (a, b, c) => {
+//     const avg = (a + b + c) / 3;
+//     return Number(avg.toFixed(2));
+// };
 
-console.log("Outside" + surname);
+// // VARIABLE SCOPING - global local var
 
-const a = 5;
-console.log(a);
+// const myname = "Moyo";
+// console.log(myname);
+// if (true) {
+//     const surname = "Ayo";
+//     const myname = "Wale";
+//     console.log(surname);
+//     console.log("in a block" + myname);
+// }
+// const surname = "Ade";
 
-const local = () => {
-    const a = 7;
-    const b = 8;
+// console.log("Outside" + surname);
 
-    console.log(a);
-};
-local();
-// console.log(b);
-console.log(a);
+// const a = 5;
+// console.log(a);
 
-// arrays
-// ARRAYS {elements, element, el}
+// const local = () => {
+//     const a = 7;
+//     const b = 8;
 
-const students = ["Mofe", "Funso", "Zainab"];
-console.log(students);
-// arrays properties and methods
-console.log(students.length);
+//     console.log(a);
+// };
+// local();
+// // console.log(b);
+// console.log(a);
 
-// get element in arr
-console.log(students[0]);
-console.log(students[students.length - 1]);
+// // arrays
+// // ARRAYS {elements, element, el}
 
-// converting an array to a string - tstring, join
-console.log(students.toString());
-console.log(students.join(" "));
+// const students = ["Mofe", "Funso", "Zainab"];
+// console.log(students);
+// // arrays properties and methods
+// console.log(students.length);
 
-// adding elements to an array - push , unshift
-students.push("Ola");
-students.push("Nike");
-console.log(students.push("Funsho"));
-console.log(students);
+// // get element in arr
+// console.log(students[0]);
+// console.log(students[students.length - 1]);
 
-students.unshift("Ebuka");
-students.unshift("Emma");
+// // converting an array to a string - tstring, join
+// console.log(students.toString());
+// console.log(students.join(" "));
 
-console.log(students);
+// // adding elements to an array - push , unshift
+// students.push("Ola");
+// students.push("Nike");
+// console.log(students.push("Funsho"));
+// console.log(students);
 
-// removing elements from an array pop shift
-students.pop();
-students.pop();
-students.pop();
+// students.unshift("Ebuka");
+// students.unshift("Emma");
 
-students.shift();
-students.shift();
-console.log(students);
+// console.log(students);
 
-console.log(students.sort());
-console.log(students.reverse());
-console.log(students.includes("Ola"));
-console.log(students.includes("Mofe"));
+// // removing elements from an array pop shift
+// students.pop();
+// students.pop();
+// students.pop();
 
-const anotherStudents = ["Toyin", "Zainab"];
-console.log(students.concat(anotherStudents, ["Ayo", "Ade", "Ade"]));
+// students.shift();
+// students.shift();
+// console.log(students);
 
-// includes, sort, pop, push, shift, unshift,
-// slice, splice, concat, join, toString
+// console.log(students.sort());
+// console.log(students.reverse());
+// console.log(students.includes("Ola"));
+// console.log(students.includes("Mofe"));
 
-console.log(students.slice(0, 2));
+// const anotherStudents = ["Toyin", "Zainab"];
+// console.log(students.concat(anotherStudents, ["Ayo", "Ade", "Ade"]));
 
-const countries = ("nigeria", "ghana", "canada", "china")
-// countries = nigeria, ghana, canada, china
-console.log(countries.length);
+// // includes, sort, pop, push, shift, unshift,
+// // slice, splice, concat, join, toString
 
-if (countries.length > 5) {
-    console.log(countries.length > 5);
-} else {
-    console.log(countries.length < 5);
-}
+// console.log(students.slice(0, 2));
 
-let saving = 20000;
-const transaction = [5000, -10000, -100];
+// const countries = ("nigeria", "ghana", "canada", "china")
+// // countries = nigeria, ghana, canada, china
+// console.log(countries.length);
 
-transaction.push(-2000);
-transaction.push(50000);
+// if (countries.length > 5) {
+//     console.log(countries.length > 5);
+// } else {
+//     console.log(countries.length < 5);
+// }
 
-transaction.push(-3000);
-transaction.pop();
-console.log(transaction);
-let debit = 0;
-let credit = 0;
+// let saving = 20000;
+// const transaction = [5000, -10000, -100];
 
-for (i = 0; i < transaction.length; i++) {
-    // console.log(transaction[i]);
-// saving = saving + transaction[i]
-    saving += transaction[i];
-    if (transaction[i] < 0) {
-        debit += transaction[i];
-        console.log(`You have been debited ${transaction[i]}`);
-    } else {
-        credit += transaction[i];
-        console.log(`You have been credited ${transaction[i]}`);
+// transaction.push(-2000);
+// transaction.push(50000);
+
+// transaction.push(-3000);
+// transaction.pop();
+// console.log(transaction);
+// let debit = 0;
+// let credit = 0;
+
+// for (i = 0; i < transaction.length; i++) {
+//     // console.log(transaction[i]);
+// // saving = saving + transaction[i]
+//     saving += transaction[i];
+//     if (transaction[i] < 0) {
+//         debit += transaction[i];
+//         console.log(`You have been debited ${transaction[i]}`);
+//     } else {
+//         credit += transaction[i];
+//         console.log(`You have been credited ${transaction[i]}`);
+//     }
+// }
+// console.log(`The total debit is ${debit}`);
+// console.log(`The total credit is ${credit}`);
+
+// console.log(`Your account balance is ${saving}`);
+// // filter, find, map, forEach
+// // higher order function, callback func
+// const friends = ["John", "Jane", "Adam", "Jennifer", "Owen"];
+// friends.includes("Lester");
+
+// friends.forEach((friend, index) => {
+//     console.log(`${index}The name of my friend is ${friend}`);
+// });
+
+// friends.forEach((f, index) => {
+//     console.log(f, index);
+// });
+
+// // map
+// friends.map((val) => {
+//     if (val === "Jane" || val === 'Adam') {
+//         console.log(`${val} is my best friend`);
+//     } else {
+//         console.log(`${val} is just my friend`)
+//     }
+// });
+
+// // filter fine
+
+// const filteredFriends = friends.filter((friend) => {
+//     return friend.startsWith("J");
+// });
+// console.log(filteredFriends);
+
+// // find
+
+// const foundUser = friends.find((friend) => {
+//     return friend.startsWith("J");
+// })
+// console.log(foundUser);
+
+// const result = friends.filter((friend) => friend.length > 6);
+// const result2 = friends.find((f) => f.startsWith("A"));
+
+// console.log(result, result2)
+
+// accumulator
+
+// const movement = [300, -50, 700, 400, -300];
+
+// const total = movement.reduce((acc, val) => {
+//     return acc + val;
+// }, 0);
+
+// console.log(`Your Total bill is ${total}`);
+
+// // // object
+// const desc = ['Mubarak','Ola', 39, 'Developer', ['Shola', 'Toyin']]
+// // OBJECT - PROPERTIES, METHODS
+// // car key-value
+// const user = {
+//     firstName: 'Oretimofe',
+//     lastName: 'Oladipupo',
+//     age: 20,
+//     job: 'Web Developer',
+//     friends: ['Funso', 'Zainab', 'Ola',]
+// }
+// console.log(user);
+
+// // ACCESS properties from an object
+// // Dot notation, bracket
+// console.log(user.firstName.toUpperCase());
+// console.log(user.age);
+
+// // objName['propertyName']
+// console.log(user["friends"].includes('Steven'));
+// const nameKey = "Name";
+// console.log(user["last" + nameKey]);
+
+// // adding properties to an object
+// user.hasACar = true;
+// user.status = "Married";
+// console.log(user);
+
+// // remove properties
+
+// // delete
+// delete user.friends;
+// console.log(user);
+
+// const book = {
+//     title: "Rich Dad Poor Dad",
+//     author: "Robert Kiyosaki",
+//     year: 2001,
+//     pages: 207,
+//     similarBooks: [
+//         "Richest Man in Babylon",
+//         "The Monk who sold his Ferrari",
+//         "Think and Grow Rich"
+//     ],
+//     publisher: "Macmillian",
+//     getSummary: function () {
+//         return `The title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
+//     }
+// };
+// console.log(book);
+// // object methods
+
+// console.log(book.getSummary());
+
+// console.log(this);
+// // object destructing
+// // const {propertyNames} = objName
+
+// // publisher, author, year
+// const { publisher, author, pages, year } = book;
+// console.log(publisher);
+// // this
+// const person = {
+//     name: 'John Doe',
+//     height: 56,
+//     hasALicense: false,
+//     job: 'Designer',
+//     workHours: {
+//         mon: {
+//             open: '8:30AM',
+//             close: '5PM'
+//         },
+//         wed: {
+//             open: '9AM',
+//             close: '4PM'
+//         },
+//         fri: {
+//             open: '8AM',
+//             close: '1PM'
+//         }
+//     }
+// }
+
+// // person.workHours.mon.open
+// const {
+//     workHours: { mon: open },
+// } = person;
+
+// const users = [
+//     { name: "John", userName: "Johnny123", password: "34fg", age: 32 },
+//     { name: "Jane", userName: "Jane@23", password: "45kn", age: 17 },
+//     { name: "Mario", userName: "marBoy56", password: "5uhj", age: 45 },
+//     { name: "Kerry", userName: "Jnon12345", password: "5uhj", age: 16 },
+// ];
+// const canView = users.filter((user) => {
+//     return user.age >= 18;
+// });
+// console.log(canView);
+
+// const search = users.filter((user) => {
+//     return user.name.includes("J") || user.userName.includes("J");
+// });
+// console.log(search);
+
+const book = {
+    title: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki",
+    year: 2001,
+    pages: 207,
+    similarBooks: [
+        "Richest Man in Babylon",
+        "The Monk who sold his Ferrari",
+        "Think and Grow Rich"
+    ],
+    publisher: "Macmillian",
+    getSummary: function () {
+        return `The title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
     }
 }
-console.log(`The total debit is ${debit}`);
-console.log(`The total credit is ${credit}`);
 
-console.log(`Your account balance is ${saving}`);
-// filter, find, map, forEach
-// higher order function, callback func
-const friends = ["John", "Jane", "Adam", "Jennifer", "Owen"];
-friends.includes("Lester");
+const { title, ...all } = book;
+console.log(all);
 
-friends.forEach((friend, index) => {
-    console.log(`${index}The name of my friend is ${friend}`);
-});
+const ages = [32, 54, 16, 65, 89];
+const newAge = [2, ...ages, 76, 80]
+console.log(newAge);
 
-friends.forEach((f, index) => {
-    console.log(f, index);
-});
+// const [varNames] = arrN
 
-// map
-friends.map((val) => {
-    if (val === "Jane" || val === 'Adam') {
-        console.log(`${val} is my best friend`);
-    } else {
-        console.log(`${val} is just my friend`)
+const [...rest] = ages;
+console.log(rest);
+
+// MATH OBJECT - 8 math constants
+// console.log(Math.PI);
+
+// math methods
+// sqrt, trunc, round, random, ceil, floor
+
+console.log(Math.sqrt(25));
+
+console.log(Math.trunc(1.234));
+
+// 5
+console.log(Math.round(67.98));
+console.log(Math.round(0.23));
+console.log(Math.round(7.34));
+console.log(Math.round(2.56));
+console.log(Math.round(-2.5));
+
+console.log(Math.ceil(10.1));
+
+console.log(Math.floor(6.7));
+
+console.log(Math.random() * 2 + 1);
+
+console.log(Math.trunc(Math.random() * 6));
+
+const computer = ["rock", "paper", "scissors"];
+const randomNum = (Math.trunc(Math.random() * 3));
+const computerChoice = computer[randomNum];
+
+const playerChoice = prompt("Enter a choice (rock, paper, scissors):");
+
+const checkWin = function (computer, player) {
+    if (computer === player) {
+        return "This is a tie";
+    } else if (player === "rock") {
+        if (computer === "scissors") {
+            return "Rock smashes scissors, You win";
+        } else {
+            return "Paper covers rock, You Lose!";
+        }
+    } else if (player === "paper") {
+        if (computer === "rock") {
+            return "Paper covers rock, You win";
+        } else {
+            return "Scissors cuts paper! You Lose";
+        }
+    } else if (player === "Scissors") {
+        if (computer === "paper") {
+            return "Scissors cuts paper! You Win";
+        } else {
+            return "Rock smashes scissors, You Lose";
+        }
     }
-});
+};
+const result = checkWin(computerChoice, playerChoice);
+console.log(result);
 
-// filter fine
-
-const filteredFriends = friends.filter((friend) => {
-    return friend.startsWith("J");
-});
-console.log(filteredFriends);
-
-// find
-
-const foundUser = friends.find((friend) => {
-    return friend.startsWith("J");
-})
-console.log(foundUser);
-
-const result = friends.filter((friend) => friend.length > 6);
-const result2 = friends.find((f) => f.startsWith("A"));
-
-console.log(result, result2)
-
-const myJob = "DEVELOPER";
-// object
-// asybchronous js
-// DOM
+// // asybchronous js
+// // DOM
