@@ -757,90 +757,186 @@
 // });
 // console.log(search);
 
-const book = {
-    title: "Rich Dad Poor Dad",
-    author: "Robert Kiyosaki",
-    year: 2001,
-    pages: 207,
-    similarBooks: [
-        "Richest Man in Babylon",
-        "The Monk who sold his Ferrari",
-        "Think and Grow Rich"
-    ],
-    publisher: "Macmillian",
-    getSummary: function () {
-        return `The title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
-    }
-}
+// const book = {
+//     title: "Rich Dad Poor Dad",
+//     author: "Robert Kiyosaki",
+//     year: 2001,
+//     pages: 207,
+//     similarBooks: [
+//         "Richest Man in Babylon",
+//         "The Monk who sold his Ferrari",
+//         "Think and Grow Rich"
+//     ],
+//     publisher: "Macmillian",
+//     getSummary: function () {
+//         return `The title of the book is ${this.title} written by ${this.author} in the year ${this.year}`
+//     }
+// }
 
-const { title, ...all } = book;
-console.log(all);
+// const { title, ...all } = book;
+// console.log(all);
 
-const ages = [32, 54, 16, 65, 89];
-const newAge = [2, ...ages, 76, 80]
-console.log(newAge);
+// const ages = [32, 54, 16, 65, 89];
+// const newAge = [2, ...ages, 76, 80]
+// console.log(newAge);
 
-// const [varNames] = arrN
+// // const [varNames] = arrN
 
-const [...rest] = ages;
-console.log(rest);
+// const [...rest] = ages;
+// console.log(rest);
 
-// MATH OBJECT - 8 math constants
-// console.log(Math.PI);
+// // MATH OBJECT - 8 math constants
+// // console.log(Math.PI);
 
-// math methods
-// sqrt, trunc, round, random, ceil, floor
+// // math methods
+// // sqrt, trunc, round, random, ceil, floor
 
-console.log(Math.sqrt(25));
+// console.log(Math.sqrt(25));
 
-console.log(Math.trunc(1.234));
+// console.log(Math.trunc(1.234));
 
-// 5
-console.log(Math.round(67.98));
-console.log(Math.round(0.23));
-console.log(Math.round(7.34));
-console.log(Math.round(2.56));
-console.log(Math.round(-2.5));
+// // 5
+// console.log(Math.round(67.98));
+// console.log(Math.round(0.23));
+// console.log(Math.round(7.34));
+// console.log(Math.round(2.56));
+// console.log(Math.round(-2.5));
 
-console.log(Math.ceil(10.1));
+// console.log(Math.ceil(10.1));
 
-console.log(Math.floor(6.7));
+// console.log(Math.floor(6.7));
 
-console.log(Math.random() * 2 + 1);
+// console.log(Math.random() * 2 + 1);
 
-console.log(Math.trunc(Math.random() * 6));
+// console.log(Math.trunc(Math.random() * 6));
 
-const computer = ["rock", "paper", "scissors"];
-const randomNum = (Math.trunc(Math.random() * 3));
-const computerChoice = computer[randomNum];
+// const computer = ["rock", "paper", "scissors"];
+// const randomNum = (Math.trunc(Math.random() * 3));
+// const computerChoice = computer[randomNum];
 
-const playerChoice = prompt("Enter a choice (rock, paper, scissors):");
+// const playerChoice = prompt("Enter a choice (rock, paper, scissors):");
 
-const checkWin = function (computer, player) {
-    if (computer === player) {
-        return "This is a tie";
-    } else if (player === "rock") {
-        if (computer === "scissors") {
-            return "Rock smashes scissors, You win";
-        } else {
-            return "Paper covers rock, You Lose!";
-        }
-    } else if (player === "paper") {
-        if (computer === "rock") {
-            return "Paper covers rock, You win";
-        } else {
-            return "Scissors cuts paper! You Lose";
-        }
-    } else if (player === "Scissors") {
-        if (computer === "paper") {
-            return "Scissors cuts paper! You Win";
-        } else {
-            return "Rock smashes scissors, You Lose";
-        }
-    }
-};
-const result = checkWin(computerChoice, playerChoice);
-console.log(result);
+// const checkWin = function (computer, player) {
+//     if (computer === player) {
+//         return "This is a tie";
+//     } else if (player === "rock") {
+//         if (computer === "scissors") {
+//             return "Rock smashes scissors, You win";
+//         } else {
+//             return "Paper covers rock, You Lose!";
+//         }
+//     } else if (player === "paper") {
+//         if (computer === "rock") {
+//             return "Paper covers rock, You win";
+//         } else {
+//             return "Scissors cuts paper! You Lose";
+//         }
+//     } else if (player === "Scissors") {
+//         if (computer === "paper") {
+//             return "Scissors cuts paper! You Win";
+//         } else {
+//             return "Rock smashes scissors, You Lose";
+//         }
+//     }
+// };
+// const result = checkWin(computerChoice, playerChoice);
+// console.log(result);
 
+// // Synchronouslog
 // // asybchronous js
-// // DOM
+// console.log("first");
+// setTimeout(() => {
+//     console.log("Second");
+// }, 15000);
+
+// console.log("Third");
+
+// setInterval(() => {
+//     console.log("I am in the interval");
+// }, 2000);
+
+// non-blocking code
+// console.log("A");
+// console.log("B");
+// setTimeout(() => {
+//     console.log("IN THE TIMEOUT");
+// }, 5000);
+
+// console.log("C after the timeout");
+
+// const myInterval = setInterval(() => {
+//    console.log("Welcome user"); 
+// }, 3000);
+
+// setTimeout(() => {
+//     clearInterval(myInterval);
+// }, 15000);
+
+// FETCHING DATA - APIs - Application Programming Interface
+// JSON - JavaScript Object Notation
+// data - array
+
+// Promises - A Future Container
+
+// const url = "https://jsonplaceholder.typicode.com/users";
+
+// // fetch
+// // fetch(url)
+// //     .then((response) => {
+// //         return response.json();
+// //     })
+// //     .then((data) => {
+// //         console.log(data);
+// //     });
+
+// //   fetch(url)
+// //     .then((response) => response.json())
+// //     .then((users) => console.log(users))
+
+// const fetchData = (site) => {
+//     fetch(site)
+//         .then((res) => res.json())
+//         .then((data) => console.log(data));
+// };
+// fetchData(url);
+// fetchData("https://jsonplaceholder.typicode.com/posts");
+
+// // async / await
+
+// // try and catch block
+// try {
+//    console.log(retyu); 
+// } catch (error) {
+//    console.log(error); 
+// }
+
+// // aysnc await
+// const getData = async (site) => {
+//     try {
+//         const response = await fetch(site);
+//         const data = await response.json();
+//         console.log(data);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };
+// getData(url);
+
+// // storage api
+// // local storage - setItem, getItem, removeItem, clear, length
+// localStorage.setItem("name", "Ola Ola");
+// localStorage.setItem("token", "234567890");
+
+// const result = localStorage.getItem("name");
+// console.log(result);
+
+// localStorage.removeItem("token");
+
+// const len = localStorage.length;
+// console.log(len);
+
+// localStorage.clear()
+
+// REVISION
+
+// // DOM 
