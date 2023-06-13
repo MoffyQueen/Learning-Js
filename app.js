@@ -939,4 +939,4 @@
 
 // REVISION
 
-// // DOM 
+// // DOM - Document Object Model
